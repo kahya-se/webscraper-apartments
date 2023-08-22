@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+"""
+Example to use the scraper.
+
+"""
 
 import os
 import time
@@ -36,6 +40,7 @@ if __name__ == '__main__':
     time2 = time.time()
 
     fname = os.path.join(OUTPUT_PATH, 'apartments_'+ads.LOCATION+'_'+timestamp+'.csv') 
+    df = df.loc[df.rent<=ads.PRICE_MAX] # dirty fix for commission error (see notes in scrape_apartment_ads.py)
     df.to_csv(fname)
     
     print('Entries: {}'.format(len(df)))
