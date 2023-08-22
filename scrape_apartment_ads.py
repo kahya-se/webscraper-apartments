@@ -146,7 +146,7 @@ class Advertisements:
                 max_size = "slt=" + str(self.AREA_MAX) + close_part 
                 search_string += max_size
             
-            if self.RADIUS == None:
+            if self.RADIUS is None:
                 pass
 
             elif self.RADIUS > 0:
@@ -191,7 +191,7 @@ class Advertisements:
                 max_size = "al=" + str(self.AREA_MAX) + close_part 
                 search_string += max_size
             
-            if self.RADIUS == None:
+            if self.RADIUS is None:
                 pass
             
             elif self.RADIUS > 0:
