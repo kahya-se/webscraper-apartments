@@ -162,7 +162,4 @@ cython_debug/
 # Proj
 .git/
 output/
-<<<<<<< HEAD
-=======
 notes/
->>>>>>> 73dbdd129334ad3ec5663ab87b0d19a3562a2100
