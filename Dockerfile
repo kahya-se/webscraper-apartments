@@ -1,9 +1,10 @@
 FROM python:3.10.12-slim-bullseye
 ENV TZ=Europe/Zurich
 
-RUN pip install pandas==2.0.3
-RUN pip install requests 
-RUN pip install numpy 
+RUN pip install --no-cache-dir \ 
+                pandas==2.0.3 \ 
+                requests \ 
+                numpy
 
 WORKDIR /home/work/mobydock
 
