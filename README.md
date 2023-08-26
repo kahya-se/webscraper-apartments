@@ -15,7 +15,7 @@ Alternatively, you can employ it by using a container (see Dockerfile).
 Some advertisements appear in various websites, do not forget to clean duplicates.
 
 ## Bugs
-- Error of commission scraping homegate.ch: advertisements with erroneous entries (rent, area, rooms) are added. Description and address remains correct.
+- Erroneous entries scraping homegate.ch: entries as rent, area, and rooms are wrong. Description and address remains correct. Likely due to being sighted as a bot.
 
 ## Final note
 This web scraper retrieves data from various sources and cannot assert the correctness, completeness, accuracy, or timeliness of the data.
